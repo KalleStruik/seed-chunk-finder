@@ -1,15 +1,25 @@
 plugins {
-    java
-    application
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+    id("java")
+    id("application")
     id("fabric-loom")
 }
 
 group = "eutro"
 version = "0.1.0"
 
+mainClassName = "eutro.seed_chunk_checker.SeedChunkChecker"
+
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
+
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
 }
 
 repositories {
