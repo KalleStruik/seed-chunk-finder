@@ -1,0 +1,1 @@
+# Put your seeds in this file. (Hint: Get them from the #the-seed-vault channel on discord and react with a checkmark to the message.)

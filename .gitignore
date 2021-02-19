@@ -4,4 +4,5 @@
 /run/
 /logs/
 /.idea/
-/server/
+/server/server.jar
+/server/eula.txt
